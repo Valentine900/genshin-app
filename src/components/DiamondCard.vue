@@ -1,7 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col rounded-[10px] border border-[#00EEFF4D] bg-[url(@/assets/blue-bg.jpg)] bg-cover w-[350px] mx-auto
-           md:max-w-full"
+    class="relative flex flex-col rounded-[10px] border border-[#00EEFF4D] bg-[url(@/assets/blue-bg.jpg)] bg-cover mx-auto w-full max-w-[350px]"
   >
     <img
       :src="diamondsImage"

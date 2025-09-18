@@ -9,10 +9,10 @@
           <div class="relative">
             <img
               src="@/assets/top.png"
-              class="w-[64px] md:w-[94px] absolute md:top-[-19px] top-[-15px] md:left-[-24px] left-[14px]"
+              class="w-[64px] md:w-[94px] absolute md:top-[-19px] top-[-15px] md:left-[-24px] left-[-24px]"
             />
             <h1
-              class="md:text-[50px] text-[30px] font-medium text-white leading-[112%] md:ml-[76px] ml-[80px] md:mt-[32px] mb-[145px] md:mb-[90px]"
+              class="md:text-[50px] text-[30px] font-medium text-white text-nowrap leading-[112%] md:ml-[76px] ml-[40px] md:mt-[32px] md:mb-[90px]"
             >
               Примогемы для <br />Genshin Impact<br />
               по лучшим ценам
@@ -85,13 +85,13 @@
         </div>
 
         <div
-          class="top-up-popular bg-[#080C2099] backdrop-blur-[10px] mt-[110px] md:mt-0 rounded-[15px] p-[30px] text-white w-[55%]"
+          class="top-up-popular bg-[#080C2099] backdrop-blur-[10px] md:mt-0 rounded-[15px] p-[30px] mx-auto text-white md:w-[55%] "
         >
           <h4 class="text-[22px] md:text-[30px] font-medium mb-[15px]">💖 Самое популярное</h4>
 
           <div class="popular-block relative md:aspect-[2/1] h-[418px] md:h-auto">
             <div
-              class="diamond-card diamond-card-left absolute m-auto inset-0 w-[212px] h-fit md:translate-x-[-85%] md:translate-y-[30%] md:rotate-[-16.05deg] md:scale-[0.86] rotate-[-3.13deg] translate-x-[-25%] translate-y-[80%] scale-[0.7]"
+              class="diamond-card diamond-card-left absolute m-auto inset-0 md:w-[212px] h-fit md:translate-x-[-85%] md:translate-y-[30%] md:rotate-[-16.05deg] scale-[0.80] rotate-[-3.13deg] translate-x-[0%] translate-y-[55%] "
             >
               <DiamondCard
                 :diamondsImage="blessing"
@@ -102,7 +102,7 @@
             </div>
 
             <div
-              class="diamond-card diamond-card-center md:scale-[1] scale-[0.7] absolute m-auto inset-0 w-[212px] h-fit md:rotate-[3.84deg] z-10 rotate-[-9.11deg] translate-x-[-85%] translate-y-[-30%] md:translate-x-0 md:translate-y-0"
+              class="diamond-card diamond-card-center scale-[0.80] md:scale-[1] absolute m-auto inset-0 md:w-[212px] h-fit md:rotate-[3.84deg] z-10 rotate-[-9.11deg] translate-x-[-35%] translate-y-[-30%] md:translate-x-0 md:translate-y-0"
             >
               <DiamondCard
                 :diamondsImage="diamondsImg1"
@@ -113,7 +113,7 @@
             </div>
 
             <div
-              class="diamond-card diamond-card-right scale-[0.7] absolute m-auto inset-0 w-[212px] h-fit md:translate-x-[85%] md:translate-y-[-30%] md:rotate-[15.81deg] md:scale-[0.86] rotate-[15.81deg] translate-x-[15%] translate-y-[10%] z-20"
+              class="diamond-card diamond-card-right absolute m-auto inset-0 md:w-[212px] h-fit md:translate-x-[85%] md:translate-y-[-30%] md:rotate-[15.81deg] scale-[0.80] rotate-[15.81deg] translate-x-[45%] translate-y-[-10%] md:z-0 z-10"
             >
               <DiamondCard
                 :diamondsImage="diamondsImg2"
@@ -127,11 +127,11 @@
       </div>
 
       <!-- Блок преимуществ -->
-      <AdvantageComponent />
+      <AdvantageComponent class="mt-[92px]"/>
       <!-- -->
 
       <!-- Блок с карточками -->
-      <div class="diamond-cards grid grid-cols-1 md:grid-cols-4 gap-[40px] mt-[68px]">
+      <div class="diamond-cards grid grid-cols-1 md:grid-cols-4 gap-[40px] w-full mt-[68px]">
         <DiamondCard
           :diamondsImage="diamondsImg1"
           crystalsAmount="60 кристаллов"
@@ -308,12 +308,6 @@
   }
   .purple-girl {
     display: none !important;
-  }
-  .top-up-popular {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
   }
 }
 </style>
