@@ -36,8 +36,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'FooterComponent'
-}
+<script setup>
+
 </script>

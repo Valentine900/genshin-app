@@ -14,22 +14,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "HeroCard",
-  props: {
-    heroImage: {
-      type: String,
-      default: () => require("@/assets/lauma.png"),
-    },
-    elementImage: {
-      type: String,
-      default: () => require("@/assets/fire.png"),
-    },
-    heroName: {
-      type: String,
-      default: "Лаума",
-    },
+<script setup>
+const props = defineProps({
+  heroImage: {
+    type: String,
+    default: () => require("@/assets/lauma.png"),
   },
-};
+  elementImage: {
+    type: String,
+    default: () => require("@/assets/fire.png"),
+  },
+  heroName: {
+    type: String,
+    default: "Лаума",
+  },
+})
 </script>

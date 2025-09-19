@@ -13,18 +13,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'GuideCard',
-  props: {
-    guideImage: {
-      type: String,
-      default: () => require('@/assets/guide-1.png'),
-    },
-    guideText: {
-      type: String,
-      default: 'Событие «По исчезающим следам»: советы по прохождению',
-    },
+<script setup>
+const props = defineProps({
+  guideImage: {
+    type: String,
+    default: () => require('@/assets/guide.png'),
   },
-}
+  guideText: {
+    type: String,
+    default: 'Событие «По исчезающим следам»: советы по прохождению',
+  },
+})
 </script>

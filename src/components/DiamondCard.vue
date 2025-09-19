@@ -35,26 +35,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'DiamondCard',
-  props: {
-    diamondsImage: {
-      type: String,
-      default: () => require('@/assets/diamonds.png'),
-    },
-    crystalsAmount: {
-      type: String,
-      default: '60 Кристаллов',
-    },
-    oldPrice: {
-      type: String,
-      default: '90 ₽',
-    },
-    newPrice: {
-      type: String,
-      required: true,
-    },
+<script setup>
+const props = defineProps({
+  diamondsImage: {
+    type: String,
+    default: () => require('@/assets/diamonds.png'),
   },
-}
+  crystalsAmount: {
+    type: String,
+    default: '60 Кристаллов',
+  },
+  oldPrice: {
+    type: String,
+    default: '90 ₽',
+  },
+  newPrice: {
+    type: String,
+    required: true,
+  },
+})
 </script>

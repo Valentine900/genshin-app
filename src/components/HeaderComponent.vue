@@ -91,25 +91,15 @@
   </header>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue'
 import logo from '@/assets/logo.svg'
 import burger from '@/assets/burger.svg'
 import burger2 from '@/assets/burger2.svg'
 
-export default {
-  name: 'HeaderComponent',
-  data() {
-    return {
-      burger: burger,
-      burger2: burger2,
-      logo: logo,
-      isMenuOpen: false,
-    }
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen
-    },
-  },
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
 }
 </script>

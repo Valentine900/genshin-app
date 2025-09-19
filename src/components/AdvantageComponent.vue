@@ -34,8 +34,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'AdvantageComponent',
-}
+<script setup>
+
 </script>
