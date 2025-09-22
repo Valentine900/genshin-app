@@ -1,28 +1,28 @@
 <template>
-  <div class="min-h-screen flex justify-end">
+  <div class="min-h-screen flex">
     <div
-      class="h-screen w-[40%] max-w-[550px] mr-[50%] bg-[#080C20B2] backdrop-blur-[10px] flex items-center"
+      class="h-screen w-full md:max-w-[550px] md:mx-[120px] md:bg-[#080C20B2] backdrop-blur-[10px] flex items-center"
     >
-      <div class="w-[80%] ml-[10%]">
+      <div class="w-[90%] md:w-[80%] mx-[auto]">
         <img src="@/assets/logo.svg" alt="Logo" class="w-[218px] h-auto mx-auto" />
 
         <div class="flex flex-col gap-[28px] text-white mt-[52px]">
           <button
-            class="w-full bg-[#229ED9] rounded-[50px] py-[12px] font-medium flex items-center justify-center gap-[15px]"
+            class=" bg-[#229ED9] rounded-[50px] py-[12px] font-medium flex justify-center gap-[15px]"
           >
             <img src="@/assets/tg.svg" />
             Войти через Telegram
           </button>
 
           <button
-            class="w-full bg-[#0077FF] rounded-[50px] py-[12px] font-medium flex items-center justify-center gap-[15px] mb-[28px]"
+            class=" bg-[#0077FF] rounded-[50px] py-[12px] font-medium flex justify-center gap-[15px] mb-[28px]"
           >
             <img src="@/assets/vk.svg" />
             Войти через ВКонтакте
           </button>
         </div>
 
-        <form class="w-full flex flex-col gap-[28px]">
+        <form class=" flex flex-col gap-[28px]">
           <div class="flex flex-col">
             <input
               type="email"
@@ -65,7 +65,7 @@
 
           <div class="text-center text-white text-[16px] font-normal">
             У вас нет аккаунта? 
-            <RouterLink to="/signUp" class="text-[#DD044F] font-normal hover:underline text-[16px]"
+            <RouterLink to="/signUp" class="text-[#DD044F] ml-[8px] font-normal hover:underline text-[16px]"
               >Регистрация</RouterLink>
           </div>
         </form>
