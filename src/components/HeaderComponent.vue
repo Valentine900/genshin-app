@@ -8,7 +8,9 @@
     <div class="px-4 md:px-[16px]">
       <div class="header-container h-14 md:h-[60px] flex items-center justify-between">
         <div class="flex items-center">
+          <RouterLink to="/">
           <img :src="logo" alt="Primogem Logo" class="logo h-[28px] md:h-[36px]" />
+          </RouterLink>
         </div>
 
         <nav
@@ -20,10 +22,10 @@
           <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
             >Wiki по персонажам</RouterLink
           >
-          <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
+          <RouterLink to="/GuidesPage" class="text-white font-medium text-sm md:text-[16px]"
             >Гайды</RouterLink
           >
-          <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
+          <RouterLink to="/NewsPage" class="text-white font-medium text-sm md:text-[16px]"
             >Новости</RouterLink
           >
         </nav>
@@ -73,11 +75,11 @@
             class="navtext text-white font-medium text-[20px]"
             >Wiki по персонажам</RouterLink
           >
-          <RouterLink to="/" class="navtext text-white font-medium text-[20px]"
+          <RouterLink to="/GuidesPage" class="navtext text-white font-medium text-[20px]"
             >Гайды</RouterLink
           >
           <RouterLink
-            to="/"
+            to="/NewsPage"
             class="navtext text-white font-medium text-[20px]"
             >Новости</RouterLink
           >
