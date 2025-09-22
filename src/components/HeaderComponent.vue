@@ -19,7 +19,7 @@
           <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
             >Купить примогемы</RouterLink
           >
-          <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
+          <RouterLink to="/WikiPage" class="text-white font-medium text-sm md:text-[16px]"
             >Wiki по персонажам</RouterLink
           >
           <RouterLink to="/GuidesPage" class="text-white font-medium text-sm md:text-[16px]"
@@ -71,7 +71,7 @@
             >Купить примогемы</RouterLink
           >
           <RouterLink
-            to="/"
+            to="/WikiPage"
             class="navtext text-white font-medium text-[20px]"
             >Wiki по персонажам</RouterLink
           >

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="footer flex flex-col md:flex-row bg-[#080C20B2] border border-[#FFFFFF1A] backdrop-blur-[10px] py-6 md:py-[36px] rounded-[10px] gap-6 md:gap-[36px] mt-10 md:mt-[114px] px-4 md:px-0"
+    class="footer flex flex-col md:flex-row bg-[#080C20B2] border border-[#FFFFFF1A] backdrop-blur-[10px] py-6 md:py-[36px] rounded-[10px] gap-6 md:gap-[36px] mt-[104px] md:mt-[114px] px-4 md:px-0"
   >
 
     <div
