@@ -43,11 +43,13 @@
             to="/signIn"
             class="signtext bg-[#DD044F] text-white font-medium pl-[3px] pr-4 py-[3px] rounded-[10px] flex items-center gap-[12px] text-[14px]"
           >
+          <RouterLink to="/ProfileHPage">
             <img
               src="@/assets/avatar.svg"
               alt="icon"
               class="signinlogo w-5 h-5 md:w-[33px] md:h-auto bg-[#890231] rounded-[10px] pl-[2px] py-[2px] pr-[3px]"
             />
+            </RouterLink>
             Войти
           </RouterLink>
         </div>

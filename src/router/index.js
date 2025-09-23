@@ -33,6 +33,16 @@ const router = createRouter({
     name: 'NewsPage',
     component: () => import('@/views/NewsPage.vue')
   },
+  {
+    path: '/ProfileHPage',
+    name: 'ProfileHPage',
+    component: () => import('@/views/ProfileHPage.vue')
+  },
+  {
+    path: '/ProfilePage',
+    name: 'ProfilePage',
+    component: () => import('@/views/ProfilePage.vue')
+  },
   ]
 })
 
