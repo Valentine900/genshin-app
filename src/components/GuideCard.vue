@@ -1,7 +1,9 @@
 <template>
   <div class=" grid grid-cols-2 text-white mx-auto flex-shrink-0 max-w-[350px] md:max-w-none bg-[#0B122E] rounded-[16px] border border-[#00EEFF80] overflow-hidden">
     <div class="rounded-l-[16px] overflow-hidden">
+      <RouterLink to="/GuideItemPage">
       <img :src="guideImage" class="object-cover w-full h-full" />
+      </RouterLink>
     </div>
 
     <div class="bg-[#0B122E] flex flex-col justify-center px-[18px] py- md:px-[36px] md:py-[24px]">
@@ -14,6 +16,8 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
   guideImage: {
     type: String,

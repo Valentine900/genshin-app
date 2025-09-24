@@ -43,6 +43,11 @@ const router = createRouter({
     name: 'ProfilePage',
     component: () => import('@/views/ProfilePage.vue')
   },
+  {
+    path: '/GuideItemPage',
+    name: 'GuideItemPage',
+    component: () => import('@/views/GuideItemPage.vue')
+  },
   ]
 })
 
