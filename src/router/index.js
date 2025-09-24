@@ -48,6 +48,16 @@ const router = createRouter({
     name: 'GuideItemPage',
     component: () => import('@/views/GuideItemPage.vue')
   },
+  {
+    path: '/CardLoggedPage',
+    name: 'CardLoggedPage',
+    component: () => import('@/views/CardLoggedPage.vue')
+  },
+  {
+    path: '/CardPage',
+    name: 'CardPage',
+    component: () => import('@/views/CardPage.vue')
+  },
   ]
 })
 

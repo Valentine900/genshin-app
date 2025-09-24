@@ -2,11 +2,13 @@
   <div
     class="relative flex flex-col rounded-[10px] border border-[#00EEFF4D] bg-[url(@/assets/blue-bg.jpg)] bg-cover mx-auto w-full max-w-[350px]"
   >
+    <RouterLink to="/CardPage">
     <img
       :src="diamondsImage"
       alt="кристаллы"
       class="m-auto h-[168px]"
     />
+    </RouterLink>
     <div
       class="border border-[#00EEFF4D] flex flex-col grow gap-[8px] bg-[#080C20B2] backdrop-blur-[10px] rounded-[7px] min-w-[95%] p-[8px] pb-[16px] m-[4px]"
     >
@@ -15,7 +17,7 @@
       </h4>
 
       <div class="flex justify-center items-center gap-[14px] whitespace-nowrap">
-        <h4 v-if="oldPrice" class="text-[#FF71A2] line-through text-[16px] font-medium">
+        <h4 class="text-[#FF71A2] line-through text-[16px] font-medium">
           {{ oldPrice }}
         </h4>
 
@@ -36,6 +38,8 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
   diamondsImage: {
     type: String,

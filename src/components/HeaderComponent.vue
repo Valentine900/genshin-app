@@ -16,7 +16,7 @@
         <nav
           class="navigation hidden md:flex items-center gap-x-7 leading-[26px]"
         >
-          <RouterLink to="/" class="text-white font-medium text-sm md:text-[16px]"
+          <RouterLink to="/CardLoggedPage" class="text-white font-medium text-sm md:text-[16px]"
             >Купить примогемы</RouterLink
           >
           <RouterLink to="/WikiPage" class="text-white font-medium text-sm md:text-[16px]"
@@ -68,7 +68,7 @@
           class="dropdown-menu absolute left-[-1px] right-[-1px] top-full bg-[#161E64E5] border-x border-b border-white/10 rounded-b-[20px] pt-[44px] px-[42px] flex flex-col gap-[27px] z-10 md:hidden"
         >
           <RouterLink
-            to="/"
+            to="/CardLoggedPage"
             class="navtext text-white font-medium text-[20px]"
             >Купить примогемы</RouterLink
           >
