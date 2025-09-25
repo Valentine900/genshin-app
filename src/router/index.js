@@ -58,6 +58,16 @@ const router = createRouter({
     name: 'CardPage',
     component: () => import('@/views/CardPage.vue')
   },
+  {
+    path: '/WikiItemPage',
+    name: 'WikiItemPage',
+    component: () => import('@/views/WikiItemPage.vue')
+  },
+  {
+    path: '/NewsItemPage',
+    name: 'NewsItemPage',
+    component: () => import('@/views/NewsItemPage.vue')
+  },
   ]
 })
 

@@ -4,7 +4,6 @@
   >
     <img :src="heroImage" class="absolute bottom-0 h-auto" />
 
-    >
     <div
       class="absolute bottom-0 w-[95%] py-[11px] my-[4px] bg-[#1D267DCC]  border-t border-[#00EEFF4D] rounded-[12px] flex justify-center items-center gap-[10px]"
     >

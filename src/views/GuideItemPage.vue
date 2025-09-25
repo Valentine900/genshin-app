@@ -4,20 +4,16 @@
   >
     <div class="max-w-[350px] md:max-w-[1200px] md:mx-[120px] mx-[20px]">
       <HeaderComponent />
-      <div class="flex mt-[40px] gap-[23px] text-white">
-        <RouterLink to="/GuidesPage">
-          <img src="@/assets/arrow-back.svg" class="mt-[10px]" />
-        </RouterLink>
-        <RouterLink to="/GuidesPage">
-          <h3 class="text-[14px] mt-[3px]">📖 Гайды</h3>
-        </RouterLink>
-        <span class="text-[18px]"> / </span>
-        <span class="text-[18px]">Кавеха</span>
-      </div>
+      <BreadcrumbsComponent
+          back-path="/GuidesPage"
+          back-text="📖 Гайды "
+          current-page="Кавеха"
+          class="ml-[10px]"
+        />
       <div class="md:w-[1200px] rounded-[20px] mt-[14px] bg-[#080C20B2] border border-[#00EEFF4D]">
         <div class="md:grid grid-cols-[60%_40%]">
           <div>
-            <h1 class="text-[28px] md:text-[40px] m-[21px] md:m-[42px] text-white leading-[50px]">
+            <h1 class="text-[28px] md:text-[40px] m-[21px] md:m-[42px] text-white md:leading-[50px]">
               Гайд на Кавеха: в какие отряды его поставить и как его собрать?
             </h1>
             <div class="h-px bg-[#00EEFF99] mx-[21px] md:mx-[42px]"></div>
@@ -40,7 +36,7 @@
             />
           </div>
         </div>
-        <h2 class="text-[34px] mt-[21px] md:mt-[53px] ml-[21px] md:ml-[43px] text-white">
+        <h2 class="text-[24px] mt-[21px] md:mt-[53px] ml-[21px] md:ml-[43px] text-white">
           Навыки персонажа
         </h2>
         <p
@@ -64,13 +60,15 @@
         </p>
         <img src="@/assets/kaveha2.png" class="mt-[10px] px-[20px] md:px-0 md:mx-auto" />
         <h2
-          class="text-[28px] md:text-[34px] ml-[21px] md:ml-[42px] mt-[21px] md:mt-[75px] mb-[21px] md:mb-[56px] text-white"
+          class="text-[24px] md:text-[34px] ml-[21px] md:ml-[42px] mt-[21px] md:mt-[75px] mb-[21px] md:mb-[56px] text-white text-nowrap"
         >
           Recommended Weapons
         </h2>
 
         <WeaponBlock />
+        <div class="ml-[25px] md:ml-[50px] mr-[25px]">
         <LinksComponent/>
+        </div>
       </div>
       <div>
         <h3 class="text-[30px] mt-[82px] text-white hidden md:flex">📖 Смотрите также:</h3>
@@ -85,6 +83,7 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import LinksComponent from '@/components/LinksComponent.vue'
+import BreadcrumbsComponent from '@/components/BreadcrumbsComponent.vue'
 import WeaponBlock from '@/components/WeaponBlock.vue'
 import GuideBlock from '@/components/GuideBlock.vue'
 </script>

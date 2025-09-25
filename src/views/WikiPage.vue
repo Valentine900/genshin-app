@@ -41,9 +41,11 @@
                   экзорцизма....</span
                 >
               </p>
+              <RouterLink to="/WikiItemPage">
               <button class="bg-[#DD044F] py-[14px] px-[12px] rounded-[5px] mt-[32px]">
                 <img src="@/assets/arrow.svg" alt="arrow" />
               </button>
+              </RouterLink>
             </div>
 
             <div
@@ -72,7 +74,7 @@
             </div>
           </div>
         </div>
-        <HeroContainer/>
+        <HeroContainer />
       </div>
       <FooterComponent />
     </div>
@@ -85,15 +87,8 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import HeroCard from '@/components/HeroCard.vue'
 import HeroContainer from '@/components/HeroContainer.vue'
 
-import lauma from '@/assets/lauma.png'
 import ineffa from '@/assets/ineffa.png'
 import kedin from '@/assets/kedin.png'
-import kedin2 from '@/assets/kedin-2.png'
-import amber from '@/assets/amber.png'
-import dalia from '@/assets/dalia.png'
-import fire from '@/assets/fire.svg'
 import snow from '@/assets/snow.svg'
 import dark from '@/assets/dark.svg'
-import earth from '@/assets/earth.svg'
-import water from '@/assets/water.svg'
 </script>
