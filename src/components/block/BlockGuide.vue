@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import GuideCard from '@/components/GuideCard.vue'
+import GuideCard from '@/components/ui/UiGuideCard.vue'
 
 import guide1 from '@/assets/guide-1.png'
 import guide2 from '@/assets/guide-2.png'

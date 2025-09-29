@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import RibbonCard from './RibbonCard.vue';
+import RibbonCard from '@/components/ui/UiRibbonCard.vue';
 
 import diamondsImg1 from '@/assets/diamonds.png'
 import diamondsImg2 from '@/assets/diamonds-2.png'

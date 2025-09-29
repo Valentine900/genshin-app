@@ -48,9 +48,9 @@
 </template>
 
 <script setup>
-import AdvantageComponent4 from '@/components/AdvantageComponent4.vue'
-import DiamondOverflow from '@/components/DiamondOverflow.vue'
-import PayBlock from '@/components/PayBlock.vue'
+import AdvantageComponent4 from '@/components/base/BaseAdvantage4.vue'
+import DiamondOverflow from '@/components/block/BlockDiamondOverflow.vue'
+import PayBlock from '@/components/block/BlockPay.vue'
 
 const props = defineProps({
   cardImage: {

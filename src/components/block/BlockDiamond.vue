@@ -1,5 +1,5 @@
 <template>
-  <div class="diamond-cards grid grid-cols-1 md:grid-cols-3 gap-[40px] w-full md:mt-[45px] mb-[45px]">
+  <div class="diamond-cards grid grid-cols-1 md:grid-cols-4 gap-[40px] w-full mt-[68px]">
     <DiamondCard
       :diamondsImage="diamondsImg1"
       crystalsAmount="60 кристаллов"
@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import DiamondCard from '@/components/DiamondCard.vue'
+import DiamondCard from '@/components/ui/UiDiamondCard.vue'
 
 import diamondsImg1 from '@/assets/diamonds.png'
 import diamondsImg2 from '@/assets/diamonds-2.png'

@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import WeaponComponent from './WeaponComponent.vue';
+import WeaponComponent from '@/components/ui/UiWeapon.vue';
 
 import weapon1 from '@/assets/weapon1.png'
 import weapon2 from '@/assets/weapon2.png'

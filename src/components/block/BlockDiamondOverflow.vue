@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-import DiamondCard from '@/components/DiamondCard.vue'
+import DiamondCard from '@/components/ui/UiDiamondCard.vue'
 
 import diamondsImg1 from '@/assets/diamonds.png'
 import diamondsImg2 from '@/assets/diamonds-2.png'
